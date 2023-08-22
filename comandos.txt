@@ -1,0 +1,144 @@
+jennymunera@MacBook-Pro-de-jenny GitHub % mkdir checkpoint-1808-JennyMunera
+jennymunera@MacBook-Pro-de-jenny GitHub % git init
+Reinitialized existing Git repository in /Users/jennymunera/Documents/GitHub/.git/
+jennymunera@MacBook-Pro-de-jenny GitHub % git config --global --list           
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+user.name=Jenny Munera Serna
+user.email=112194662+jennymunera@users.noreply.github.com
+user.mail=jennymunera94@gmail.com
+jennymunera@MacBook-Pro-de-jenny GitHub % git config user.name "Jenny Munera"
+jennymunera@MacBook-Pro-de-jenny GitHub % git init checkpoint-1808-JennyMunera
+Initialized empty Git repository in 
+/Users/jennymunera/Documents/GitHub/checkpoint-1808-JennyMunera/.git/
+jennymunera@MacBook-Pro-de-jenny GitHub % cd checkpoint-1808-JennyMunera
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git remote add origin 
+https://github.com/jennymunera/checkpoint-1808-JennyMunera.git
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git remote -v
+origin	https://github.com/jennymunera/checkpoint-1808-JennyMunera.git (fetch)
+origin	https://github.com/jennymunera/checkpoint-1808-JennyMunera.git (push)
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git branch
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % touch main.js
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % touch index.html
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % ls     
+index.html	main.js
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git add index.html
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git add main.js
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git commit -m "commit 01 Jenny 
+Munera"
+[main (root-commit) 7ef87b8] commit 01 Jenny Munera
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git push   
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/jennymunera/checkpoint-1808-JennyMunera.git'
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git remote -v
+origin	https://github.com/jennymunera/checkpoint-1808-JennyMunera.git (fetch)
+origin	https://github.com/jennymunera/checkpoint-1808-JennyMunera.git (push)
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 250 bytes | 250.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jennymunera/checkpoint-1808-JennyMunera.git
+ * [new branch]      main -> main
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git branch feature
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git checkout feature
+Switched to branch 'feature'
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % mkdir Hardware
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % mkdir Software
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % mkdir SeguridadInformatica
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % cd Hardware
+jennymunera@MacBook-Pro-de-jenny Hardware % touch resumen.txt
+jennymunera@MacBook-Pro-de-jenny Hardware % cd..
+zsh: command not found: cd..
+jennymunera@MacBook-Pro-de-jenny Hardware % cd ..
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % cd Software
+jennymunera@MacBook-Pro-de-jenny Software % tocuh resumen.txt
+zsh: command not found: tocuh
+jennymunera@MacBook-Pro-de-jenny Software % touch resumen.txt
+jennymunera@MacBook-Pro-de-jenny Software % cd ..
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % cd SeguridadInformatica
+jennymunera@MacBook-Pro-de-jenny SeguridadInformatica % touch resumen.txt 
+jennymunera@MacBook-Pro-de-jenny SeguridadInformatica % cd ..
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git add .
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git commit -m "commit 02 
+JennyMunera"
+[feature 4a0a479] commit 02 JennyMunera
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 389 bytes | 389.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/jennymunera/checkpoint-1808-JennyMunera/pull/new/feature
+remote: 
+To https://github.com/jennymunera/checkpoint-1808-JennyMunera.git
+ * [new branch]      feature -> feature
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git checkout main
+Switched to branch 'main'
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % mv main.js resumenHardware.txt
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % mv index.html resumenSoftware.txt
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % nano resumenSoftware.txt
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % nano resumenSoftware.txt 
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % nano resumenHardware.txt
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git add .
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git commit -m "commit 03 
+JennyMunera"    
+[main 58b30ea] commit 03 JennyMunera
+ 4 files changed, 6 insertions(+)
+ delete mode 100644 index.html
+ delete mode 100644 main.js
+ create mode 100644 resumenHardware.txt
+ create mode 100644 resumenSoftware.txt
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 389 bytes | 389.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jennymunera/checkpoint-1808-JennyMunera.git
+   7ef87b8..58b30ea  main -> main
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git merge feature
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Not committing merge; use 'git commit' to complete the merge.
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git commit -m "commit 04 Jenny 
+Munera- Unificando ramas"
+[main 396e1fc] commit 04 Jenny Munera- Unificando ramas
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 395 bytes | 395.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jennymunera/checkpoint-1808-JennyMunera.git
+   58b30ea..396e1fc  main -> main
+jennymunera@MacBook-Pro-de-jenny checkpoint-1808-JennyMunera % touch comandos.txt
